@@ -1,0 +1,33 @@
+# Environment
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+temp_repos/
+*.log
+.DS_Store
+
+# Cache
+cache/*.json
+!cache/.gitkeep
+
+# Distribution
+dist/
+build/
+*.egg-info/

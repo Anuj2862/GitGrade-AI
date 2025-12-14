@@ -1,0 +1,334 @@
+{
+  "https://github.com/Anuj2862/SARA": {
+    "total_score": 50,
+    "max_score": 100,
+    "skill_level": "Intermediate",
+    "percentile": 40,
+    "dimensions": {
+      "code_quality": {
+        "score": 2,
+        "max_score": 18,
+        "signals": [
+          "Very high complexity (15.0)",
+          "Fair maintainability (52)",
+          "Poorly commented (5.0%)"
+        ],
+        "formula": "complexity(6) + maintainability(6) + comments(6)"
+      },
+      "architecture": {
+        "score": 8,
+        "max_score": 12,
+        "signals": [
+          "Organized (5 folders)",
+          "Some OOP (5 classes)"
+        ],
+        "formula": "organization(6) + patterns(6)"
+      },
+      "documentation": {
+        "score": 15,
+        "max_score": 15,
+        "signals": [
+          "README exists",
+          "Comprehensive README (3150 chars)",
+          "Has setup instructions"
+        ],
+        "formula": "exists(5) + length(5) + instructions(5)"
+      },
+      "testing": {
+        "score": 2,
+        "max_score": 12,
+        "signals": [
+          "New project (likely minimal testing)"
+        ],
+        "formula": "test_presence(6) + coverage(6)"
+      },
+      "security": {
+        "score": 7,
+        "max_score": 10,
+        "signals": [
+          "Basic security assumed",
+          "Actively maintained"
+        ],
+        "formula": "vulnerabilities(5) + secrets(3) + practices(2)"
+      },
+      "git_workflow": {
+        "score": 8,
+        "max_score": 13,
+        "signals": [
+          "Many commits (264)",
+          "Very active (19 recent commits)",
+          "No conventional commits detected"
+        ],
+        "formula": "commits(4) + activity(4) + conventions(5)"
+      },
+      "real_world": {
+        "score": 2,
+        "max_score": 12,
+        "signals": [
+          "New project (0 stars)",
+          "Solo project"
+        ],
+        "formula": "completeness(6) + usability(6)"
+      },
+      "innovation": {
+        "score": 6,
+        "max_score": 8,
+        "signals": [
+          "Uses 2 languages"
+        ],
+        "formula": "sophistication(4) + uniqueness(4)"
+      }
+    },
+    "ai_insights": {
+      "summary": "This repository demonstrates basic competency with a score of 50/100 (Intermediate). There's clear potential here, but significant improvements in code quality, documentation, and development practices would make this more recruiter-ready.",
+      "roadmap": [
+        {
+          "item": "Reduce code complexity and improve maintainability",
+          "reason": "Lower complexity makes code easier to understand and modify"
+        },
+        {
+          "item": "Implement unit tests for core functionality",
+          "reason": "Tests improve reliability and make refactoring safer"
+        },
+        {
+          "item": "Add production-ready features and deployment instructions",
+          "reason": "Shows the project is ready for real-world use"
+        },
+        {
+          "item": "Use conventional commit messages and consistent workflow",
+          "reason": "Clear commit history shows professional development practices"
+        },
+        {
+          "item": "Improve folder structure and separation of concerns",
+          "reason": "Clean architecture makes the codebase more maintainable"
+        }
+      ],
+      "generated_by": "rule-based-fallback"
+    },
+    "repo_name": "SARA",
+    "repo_url": "https://github.com/Anuj2862/SARA",
+    "analyzed_at": "2025-12-14 15:20:11.409222"
+  },
+  "https://github.com/Anuj2862/FinBuddy-MumbaiHacks2025": {
+    "total_score": 45,
+    "max_score": 100,
+    "skill_level": "Intermediate",
+    "percentile": 30,
+    "dimensions": {
+      "code_quality": {
+        "score": 2,
+        "max_score": 18,
+        "signals": [
+          "Very high complexity (15.0)",
+          "Fair maintainability (52)",
+          "Poorly commented (5.0%)"
+        ],
+        "formula": "complexity(6) + maintainability(6) + comments(6)"
+      },
+      "architecture": {
+        "score": 8,
+        "max_score": 12,
+        "signals": [
+          "Organized (4 folders)",
+          "Some OOP (5 classes)"
+        ],
+        "formula": "organization(6) + patterns(6)"
+      },
+      "documentation": {
+        "score": 9,
+        "max_score": 15,
+        "signals": [
+          "README exists",
+          "Detailed README (1017 chars)",
+          "Missing setup instructions"
+        ],
+        "formula": "exists(5) + length(5) + instructions(5)"
+      },
+      "testing": {
+        "score": 2,
+        "max_score": 12,
+        "signals": [
+          "New project (likely minimal testing)"
+        ],
+        "formula": "test_presence(6) + coverage(6)"
+      },
+      "security": {
+        "score": 7,
+        "max_score": 10,
+        "signals": [
+          "Basic security assumed",
+          "Actively maintained"
+        ],
+        "formula": "vulnerabilities(5) + secrets(3) + practices(2)"
+      },
+      "git_workflow": {
+        "score": 7,
+        "max_score": 13,
+        "signals": [
+          "Many commits (434)",
+          "Active (9 recent commits)",
+          "No conventional commits detected"
+        ],
+        "formula": "commits(4) + activity(4) + conventions(5)"
+      },
+      "real_world": {
+        "score": 2,
+        "max_score": 12,
+        "signals": [
+          "New project (0 stars)",
+          "Solo project"
+        ],
+        "formula": "completeness(6) + usability(6)"
+      },
+      "innovation": {
+        "score": 8,
+        "max_score": 8,
+        "signals": [
+          "Multi-language (5 languages)"
+        ],
+        "formula": "sophistication(4) + uniqueness(4)"
+      }
+    },
+    "ai_insights": {
+      "summary": "This repository demonstrates basic competency with a score of 45/100 (Intermediate). There's clear potential here, but significant improvements in code quality, documentation, and development practices would make this more recruiter-ready.",
+      "roadmap": [
+        {
+          "item": "Reduce code complexity and improve maintainability",
+          "reason": "Lower complexity makes code easier to understand and modify"
+        },
+        {
+          "item": "Implement unit tests for core functionality",
+          "reason": "Tests improve reliability and make refactoring safer"
+        },
+        {
+          "item": "Add production-ready features and deployment instructions",
+          "reason": "Shows the project is ready for real-world use"
+        },
+        {
+          "item": "Use conventional commit messages and consistent workflow",
+          "reason": "Clear commit history shows professional development practices"
+        },
+        {
+          "item": "Add comprehensive README with setup and usage instructions",
+          "reason": "Good documentation helps users and shows professionalism"
+        }
+      ],
+      "generated_by": "rule-based-fallback"
+    },
+    "repo_name": "FinBuddy-MumbaiHacks2025",
+    "repo_url": "https://github.com/Anuj2862/FinBuddy-MumbaiHacks2025",
+    "analyzed_at": "2025-12-14 15:20:54.887220"
+  },
+  "https://github.com/Anuj2862/EcoSort-AI": {
+    "total_score": 84,
+    "max_score": 100,
+    "skill_level": "Advanced",
+    "percentile": 85,
+    "dimensions": {
+      "code_quality": {
+        "score": 14,
+        "max_score": 18,
+        "signals": [
+          "Moderate complexity (5.0)",
+          "Excellent maintainability (85 > 80)",
+          "Adequately commented (15.0%)"
+        ],
+        "formula": "complexity(6) + maintainability(6) + comments(6)"
+      },
+      "architecture": {
+        "score": 6,
+        "max_score": 12,
+        "signals": [
+          "Simple structure (2 folders)",
+          "Some OOP (5 classes)"
+        ],
+        "formula": "organization(6) + patterns(6)"
+      },
+      "documentation": {
+        "score": 15,
+        "max_score": 15,
+        "signals": [
+          "README exists",
+          "Comprehensive README (8916 chars)",
+          "Has setup instructions"
+        ],
+        "formula": "exists(5) + length(5) + instructions(5)"
+      },
+      "testing": {
+        "score": 8,
+        "max_score": 12,
+        "signals": [
+          "Codebase structure implies testability",
+          "Baseline testing assumed"
+        ],
+        "formula": "structure(5) + baseline(3) + docs(4)"
+      },
+      "security": {
+        "score": 10,
+        "max_score": 10,
+        "signals": [
+          "Basic security assumed",
+          "Has license (MIT License)",
+          "Actively maintained"
+        ],
+        "formula": "vulnerabilities(5) + secrets(3) + practices(2)"
+      },
+      "git_workflow": {
+        "score": 13,
+        "max_score": 13,
+        "signals": [
+          "Strong history (479+ commits)",
+          "Sprint mode (14 recent commits)",
+          "Clean commit messages detected"
+        ],
+        "formula": "history(4) + activity(4) + conventions(5)"
+      },
+      "real_world": {
+        "score": 10,
+        "max_score": 12,
+        "signals": [
+          "Deployment info (run)",
+          "Active development cycle"
+        ],
+        "formula": "deployment(6) + maturity(6)"
+      },
+      "innovation": {
+        "score": 8,
+        "max_score": 8,
+        "signals": [
+          "Multi-language (4 languages)"
+        ],
+        "formula": "sophistication(4) + uniqueness(4)"
+      }
+    },
+    "ai_insights": {
+      "summary": "This repository demonstrates strong software engineering practices with a score of 84/100 (Advanced). The code quality is excellent, and the project structure is well-organized. This reflects professional-level development that would impress recruiters.",
+      "roadmap": [
+        {
+          "item": "Improve folder structure and separation of concerns",
+          "reason": "Clean architecture makes the codebase more maintainable"
+        },
+        {
+          "item": "Implement unit tests for core functionality",
+          "reason": "Tests improve reliability and make refactoring safer"
+        },
+        {
+          "item": "Reduce code complexity and improve maintainability",
+          "reason": "Lower complexity makes code easier to understand and modify"
+        },
+        {
+          "item": "Add production-ready features and deployment instructions",
+          "reason": "Shows the project is ready for real-world use"
+        },
+        {
+          "item": "Add comprehensive README with setup and usage instructions",
+          "reason": "Good documentation helps users and shows professionalism"
+        }
+      ],
+      "generated_by": "rule-based-fallback"
+    },
+    "repo_name": "EcoSort-AI",
+    "repo_url": "https://github.com/Anuj2862/EcoSort-AI",
+    "analyzed_at": "2025-12-14 16:01:41.937128"
+  }
+}

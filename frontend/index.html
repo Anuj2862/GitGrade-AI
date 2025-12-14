@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitGrade - Repository Mirror</title>
+    <meta name="description" content="See your GitHub repository through a recruiter's eyes">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <div class="container">
+            <div class="logo">GitGrade</div>
+            <h1 class="hero-title">Your Repository Mirror</h1>
+            <p class="hero-subtitle">See your GitHub through a recruiter's eyes</p>
+
+            <!-- Input Form -->
+            <form id="analyzeForm" class="input-form">
+                <div class="input-wrapper">
+                    <input type="url" id="repoUrl" placeholder="https://github.com/username/repository" required
+                        autocomplete="off">
+                    <button type="submit" class="btn-primary">
+                        <span>Analyze Repository</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+            <p class="hint">Try: https://github.com/fastapi/fastapi</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Get a senior engineer's perspective on your code structure, patterns, and documentation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Recruiter Score</h3>
+                    <p>Instant sophisticated scoring across 8 dimensions including Complexity, Security, and Innovation.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Actionable Roadmap</h3>
+                    <p>Receive a clear, prioritized checklist to improve your project and impress 10x more recruiters.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loading" class="loading hidden">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2>Analyzing Repository</h2>
+            <p id="loadingText">Fetching repository data...</p>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div id="progressPercent" class="progress-percent">0%</div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="results hidden">
+        <div class="container">
+            <!-- Header -->
+            <div class="results-header">
+                <button onclick="location.reload()" class="btn-back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M16 10H4m0 0l4 4m-4-4l4-4" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                    Analyze Another
+                </button>
+                <h2 id="repoName">Repository Analysis</h2>
+            </div>
+
+            <!-- Score Dashboard -->
+            <div class="score-section">
+                <div class="score-card main-score">
+                    <div class="score-label">Overall Score</div>
+                    <div class="score-display">
+                        <span id="totalScore" class="score-value">0</span>
+                        <span class="score-max">/ 100</span>
+                    </div>
+                    <div id="skillLevel" class="skill-badge">Analyzing...</div>
+                    <div id="percentile" class="percentile">Calculating...</div>
+                </div>
+            </div>
+
+            <!-- Radar Chart -->
+            <div class="chart-section">
+                <h3>Dimension Breakdown</h3>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Dimension Cards -->
+            <div class="dimensions-section">
+                <h3>Detailed Scores</h3>
+                <div id="dimensionCards" class="dimension-grid"></div>
+            </div>
+
+            <!-- AI Summary -->
+            <div class="summary-section">
+                <h3>AI Evaluation</h3>
+                <div id="aiSummary" class="summary-text"></div>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="roadmap-section">
+                <h3>Improvement Roadmap</h3>
+                <div id="roadmapList" class="roadmap-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="error" class="error hidden">
+        <div class="error-content">
+            <div class="error-icon">⚠️</div>
+            <h2 id="errorTitle">Analysis Failed</h2>
+            <p id="errorMessage"></p>
+            <button onclick="location.reload()" class="btn-secondary">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
